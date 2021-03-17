@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" contents="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+
+<title>3カラムレイアウト例</title> 
+<link rel="stylesheet" href="KADAI.css"></head>
+<body> 
+    <div class="wrapper"> 
+        <div class="header">header
+            <ul class="header-right">
+                <li class="lef"></li>
+                <li class="mid"></li>
+                <li class="rig"></li>
+            </ul>
+        </div> 
+
+        <div class="contents clearfix"> 
+            <div class="left clearfix"></div> 
+            
+            <div class="right">
+                <div class="right-up"></div>
+                <div class="right-middle"></div>
+                <div class="right-bottom"></div>
+            </div>
+        </div>
+
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
+
+
+=CSS
+
+body {
+    min-height: 100%; 
+    height: 100%;
+}
+.clearfix::after { 
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+.wrapper {
+    width: 400px; 
+    margin: 0 auto; 
+/* wrapperクラスを中央寄せ */
+}
+/** header **/
+.header { 
+    height: 100px; 
+    background-color: #141f40;
+}
+.header-right {
+    height: 60px;
+    width: 160px;
+    margin: 20px 10px 0 0;
+    background-color: white;
+    float: right;
+    list-style-type: none;
+}
+.lef {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px 0 10px;
+    background-color: #a9004b;
+
+}
+.mid {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px;
+    background-color: #a9004b;
+}
+.rig {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 5px;
+    background-color: #a9004b;
+}
+
+/** end of header **//** contents **/
+.contents { 
+    height: 250px;
+}
+.left { 
+    float: left;
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+}
+
+
+.right { 
+    float: left; 
+    width: 250px; 
+    height: 250px;
+    background-color: #8c2727;
+}
+.right-up {
+    width: 140px;
+    height: 40px;
+    margin: 40px 0 0 40px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+    background-color: #ff863f;
+}
+.right-middle {
+    width: 140px;
+    height: 40px;
+    margin: 0 0 0 40px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+    background-color: #ff863f;
+}
+.right-bottom {
+    width: 140px;
+    height: 40px;
+    margin: 0 0 0 40px;
+    border: 5px solid white;
+    background-color: #ff863f;
+}
+
+
+.footer {
+    height: 100px;
+    background-color: #d98d30;
+}
+
+/* reset.css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 479px) {
+
+    .wrapper {
+        width: 200px;
+    }
+    .header {
+        width: 200px;
+        height: 210px;
+    }
+    .header-right {
+        width: 60px;
+        height: 160px;
+        margin: 0 70px 10px 70px;
+   
+    }
+    .lef {
+        margin: 10px 10px 5px 10px;
+    }
+    .mid {
+        margin: 5px 10px 5px 10px;
+    }
+    .rig {
+        margin: 5px 10px 10px 10px;
+    }
+    .contents {
+        height: 280px;
+    }
+    .left {
+        float: none;
+        width: 200px;
+        height: 100px;
+    }
+    .right {
+        height: 180px;
+        width: 200px;
+    }
+    .right-up {
+        width: 130px;
+        height: 30px;
+        margin: 20px 0 0 30px;
+        margin-bottom: 10px;
+    }
+    .right-middle {
+        width: 130px;
+        height: 30px;
+        margin: 0 0 0 30px;
+        margin-bottom: 10px;
+    }
+    .right-bottom {
+        width: 130px;
+        height: 30px;
+        margin: 0 0 0 30px;
+    }
+    .footer {
+        width: 200px;
+    }
+
+
+}
