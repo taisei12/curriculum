@@ -5,7 +5,7 @@
 
 for($i = 0; $i <= 100; $i++) {
 
-   if($i % 15 === 0){
+   if($i % 5 === 0 && $i % 3 === 0){
        echo "FizzBuzz!".'<br>';
    } elseif ($i % 5 === 0){
        echo "Buzz!".'<br>';
