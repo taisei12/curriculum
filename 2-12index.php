@@ -119,11 +119,6 @@
     <input type="submit" name="btn_confirm" value="申込">
 </form>
 
-<ul>
-    <li><br><span style = "border-bottom: solid 3px red; font-size: 16px;">1.モジュール</span><br>※主にユーザーとの仕様確認を目的に、業務の整理やデータ、画面レイアウトなどの「枠組み」を設計する作業。<br><br></li>
-    <li><span style = "border-bottom: solid 3px red; font-size: 16px;">2.バージョン管理システム</span><br>※詳細設計はプログラマへの説明向けにロジックなどの具体的な肉付けを行う作業。<br><br></li>
-    <li><span style = "border-bottom: solid 3px red; font-size: 16px;">3.サブクエリ</span><br>※プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システム。<br><br></li>
-</ul>
 </body>
 
 </html>
